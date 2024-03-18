@@ -41,17 +41,24 @@ sections:
     title: ""
     username: admin
   id: about
+  
 - block: collection
+  id: publication
   content:
     filters:
       exclude_featured: false
       folders:
       - publication
-    title: Publications
+    text: |-
+      {{% callout note %}}
+      [filtering publications](./publication/)
+      {{% /callout %}}
+    title: Sample Publications
   design:
     columns: "2"
     view: citation
 - block: contact
+  id: contact
   content:
     title: Software
     autolink: true
@@ -60,25 +67,8 @@ sections:
       link: https://cran.r-project.org/web/packages/SemiPar.depCens/
       name: SemiPar.depCens
     design:
-     columns: "2"
-- block: contact
-  content:
-    address:
-      city: Leuven
-      country: Belgium
-      country_code: BE
-      postcode: "3000"
-      region: Flanders
-    autolink: true
-    contact_links:
-    - icon: envelope
-      icon_pack: fas
-      link: mailto:negera.deresa@gmail.com
-      name: Email me
-    title: Contact
-  design:
-    columns: "2"
-  id: contact
+     columns: "1"
+    
 type: landing
 ---
 

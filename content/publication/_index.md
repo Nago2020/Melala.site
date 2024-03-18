@@ -2,7 +2,7 @@
 banner:
   caption: ""
   image: ""
-cms_exclude: true
+cms_exclude: false
 title: Sample Publications
 view: 4
 ---

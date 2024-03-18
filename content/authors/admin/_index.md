@@ -18,11 +18,12 @@ email: negera.deresa@gmail.com
 highlight_name: true
 interests:
 - Clinical trials
-- Dependent Censoring
+- Dependent censoring
 - Copulas
-- Statistical Inference
+- Drug discovery
 - Machine learning
-- Survival Analysis 
+- Survival analysis 
+- Meta analysis
 social:
 - icon: envelope
   icon_pack: fas
@@ -39,12 +40,12 @@ social:
   icon_pack: fab
   link: "https://www.linkedin.com/in/negera-w-deresa-9bb2a095/"
 superuser: true
-bio: My research interests include Clinical trials, Dependent censoring, Semiparametric  modelling,
+bio: My research interests include Clinical trials, Dependent censoring, Drug discovery,
   Survival analysis, Competing risks and copulas.
 greeting: negera::negera()
 ---
 
-I am interested in statistics and data science, and I like to play with data to generate data-driven decisions. 
+I am interested in statistics and data science, and I enjoy playing with data to generate data-driven decisions. 
 
 I was a statistical consultant at the Data Science Institute (DSI), Uhasselt, Belgium. I have gained the following experience during my tenure at DSI:  Clinical study protocol writing, Sample size calculations for  superiority, non-inferiority and equivalence trials, Adaptive clinical trials, and statistical methods for drug discovery. 
 
