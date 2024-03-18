@@ -4,8 +4,8 @@ theme: "theme-academic-cv"
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: " " # Website name
-baseURL: https://negera.github.io/    # Website URL
+title: " "         # Website name
+baseURL: 'https://negerawd.netlify.app'    # Website URL
 
 ############################
 ## LANGUAGE
@@ -48,6 +48,9 @@ taxonomies:
   author: authors
 markup:
   _merge: deep
+  goldmark:
+    renderer:
+      unsafe: true
 related:
   threshold: 80
   includeNewer: true
