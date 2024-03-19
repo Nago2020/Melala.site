@@ -4,5 +4,5 @@ banner:
   image: ""
 cms_exclude: false
 title: Sample Publications
-view: 4
+view: citation
 ---
