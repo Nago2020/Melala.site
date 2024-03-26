@@ -10,12 +10,15 @@ main:
   - name: Publication
     url: '#publication'
     weight: 20
+  - name: Posts
+    url: '#posts'
+    weight: 30
   - name: Software
     url: '#contact'
-    weight: 30
+    weight: 40
   - name: CV
     url: uploads/CV-Negera.pdf
-    weight: 40
+    weight: 50
     
     
     
@@ -24,9 +27,7 @@ main:
  
 
 
-#  - name: Posts
-#    url: '#posts'
-#   weight: 20
+
 # - name: Projects
 #    url: '#projects'
 #    weight: 30

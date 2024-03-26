@@ -1,8 +1,9 @@
 ---
 cms_exclude: true
+math: true
 header:
   caption: ""
   image: ""
-title: Posts
-view: 2
+title: Recent Posts
+view: list
 ---

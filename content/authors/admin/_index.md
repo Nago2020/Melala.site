@@ -41,7 +41,7 @@ social:
   link: "https://www.linkedin.com/in/negera-w-deresa-9bb2a095/"
 superuser: true
 bio: My research interests include clinical trials, dependent censoring, drug discovery,
-  survival analysis, competing risks and copulas.
+  survival analysis, competing risks, multistate models and copulas.
 greeting: negera::negera()
 ---
 
