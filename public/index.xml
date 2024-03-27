@@ -48,13 +48,11 @@ $$
 T = -\text{log}(u)/\lambda, \quad C = -\text{log}(v)/\lambda,
 $$
 $$
-\mbox{where } \lambda = 0.2  \mbox{  and  } (u,v) \mbox{  is generated from a Gumbel copula} \
-\mbox{with parameter }
-\alpha = 1 \mbox{ and } 5, \mbox {corresponding to  Kendall&amp;rsquo;s } \tau
+\mbox{where } \lambda = 0.2  \mbox{  and  } (u,v) \mbox{  is generated from a Gumbel copula with}
 $$
 $$
-\mbox{with parameter }
-\alpha = 1, 5, \mbox {corresponding to  Kendall&amp;rsquo;s } \tau \mbox{ of 0 and 0.8.}
+\mbox{ parameter }
+\alpha = 1, 5, \mbox {corresponding to  Kendall&amp;rsquo;s } \tau \mbox{ of 0 and 0.8.    }
 $$
 Due to right censoring, we observe
 $$
