@@ -47,7 +47,7 @@ greeting: negera::negera()
 
 I am interested in statistics and data science, and I enjoy playing with data to generate data-driven decisions. 
 
-I am a statistical consultant at the Data Science Institute (DSI), Uhasselt, Belgium. At DSI, I have worked with pharmaceutical companies, hospitals, and industries to design and execute studies, calculate sample sizes for different study designs, propose new statistical methods, conduct data analysis, and write R programs and statistical reports. 
+I am a statistical consultant at the Data Science Institute (DSI), Hasselt University, Belgium. At DSI, I have worked with pharmaceutical companies, hospitals, and industries to design and execute studies, calculate sample sizes for different study designs, propose new statistical methods, conduct data analysis, and write R programs and statistical reports. 
 
 <!--I have gained the following experience during my tenure at DSI:  Clinical study protocol writing, Sample size calculations for  superiority, non-inferiority and equivalence trials, Adaptive clinical trials, and statistical methods for drug discovery. -->
 
