@@ -1,5 +1,5 @@
 ---
-title: 'SemiPar.depCens : A New package for fitting the Cox proportional hazards model
+title: 'SemiPar.depCens : A new package for fitting the Cox proportional hazards model
   under dependent censoring'
 author: ''
 date: '2024-04-08'

@@ -40,7 +40,7 @@ social:
   icon_pack: fab
   link: "https://www.linkedin.com/in/negera-w-deresa-9bb2a095/"
 superuser: true
-bio: My research interests include clinical trials, dependent censoring, drug discovery,
+bio: My research interests include clinical trials, dependent censoring, machine learning,
   survival analysis, competing risks, multistate models and copulas.
 greeting: negera::negera()
 ---
