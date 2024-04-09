@@ -10,11 +10,15 @@
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/post/dependent-censoring/</loc>
-    <lastmod>2024-03-21T10:27:14+01:00</lastmod>
+    <loc>http://localhost:4321/post/</loc>
+    <lastmod>2024-04-08T15:06:01+02:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/post/</loc>
+    <loc>http://localhost:4321/post/semipar-depcens-package/</loc>
+    <lastmod>2024-04-08T15:06:01+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/post/dependent-censoring/</loc>
     <lastmod>2024-03-21T10:27:14+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

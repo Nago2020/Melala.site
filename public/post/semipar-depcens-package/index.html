@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 9, 2024 --><html lang="en-us" >
+
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Negera Wakgari Deresa" />
+
+
+
+
+
+  
+
+<meta name="description" content="SemiPar.depCens In this post, I will discuss the SemiPar.depCens package and its usage in practical applications. The SemiPar.depCens package is built to provide easy-to-use functions in R for estimation of the dependent censoring methodology proposed in Deresa and Van Keilegom (2024)." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://localhost:4321/post/semipar-depcens-package/" />
+<link rel="canonical" href="http://localhost:4321/post/semipar-depcens-package/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hufbaa4f56cb0506ceb264e20d8ca512d5_43346_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hufbaa4f56cb0506ceb264e20d8ca512d5_43346_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="http://localhost:4321/media/icon_hufbaa4f56cb0506ceb264e20d8ca512d5_43346_512x512_fill_lanczos_center_3.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content=" " />
+<meta property="og:url" content="http://localhost:4321/post/semipar-depcens-package/" />
+<meta property="og:title" content="SemiPar.depCens : A New package for fitting the Cox proportional hazards model under dependent censoring |  " />
+<meta property="og:description" content="SemiPar.depCens In this post, I will discuss the SemiPar.depCens package and its usage in practical applications. The SemiPar.depCens package is built to provide easy-to-use functions in R for estimation of the dependent censoring methodology proposed in Deresa and Van Keilegom (2024)." /><meta property="og:image" content="http://localhost:4321/media/icon_hufbaa4f56cb0506ceb264e20d8ca512d5_43346_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2024-04-08T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2024-04-08T15:06:01&#43;02:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:4321/post/semipar-depcens-package/"
+  },
+  "headline": "SemiPar.depCens : A New package for fitting the Cox proportional hazards model under dependent censoring",
+  
+  "datePublished": "2024-04-08T00:00:00Z",
+  "dateModified": "2024-04-08T15:06:01+02:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Negera Wakgari Deresa"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": " ",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:4321/media/icon_hufbaa4f56cb0506ceb264e20d8ca512d5_43346_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "SemiPar.depCens In this post, I will discuss the SemiPar.depCens package and its usage in practical applications. The SemiPar.depCens package is built to provide easy-to-use functions in R for estimation of the dependent censoring methodology proposed in Deresa and Van Keilegom (2024)."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>SemiPar.depCens : A New package for fitting the Cox proportional hazards model under dependent censoring |  </title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="fc2d952897f18dfbaed89c656e3133c2" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"> </a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"> </a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>About me</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publication"><span>Publication</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Software</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/uploads/CV-Negera.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="/"  aria-label="">
+                <i class="fas fa-" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>SemiPar.depCens : A New package for fitting the Cox proportional hazards model under dependent censoring</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Apr 8, 2024
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="semipardepcens">SemiPar.depCens</h2>
+<p>In this post, I will discuss the <strong>SemiPar.depCens</strong> package and its usage in practical applications. The
+<strong>SemiPar.depCens</strong> package is built to provide easy-to-use functions in R for estimation of the dependent censoring methodology proposed in <a href="https://doi.org/10.1080/01621459.2022.2161387" target="_blank" rel="noopener">Deresa and Van Keilegom (2024)</a>. The approach presented in the latter paper is based on a parametric copula for the relation between the survival time and the censoring time, and the parameter defining the copula does not need to be known. Instead, the copula parameter is estimated jointly with other finite model parameters by following a pseudo-likelihood approach. The main idea is to decompose the estimation in two steps instead of a direct optimization. First, obtain a consistent estimator of the cumulative hazard function using a martingale-based estimating equation. Then, substitute it into the likelihood function to obtain the pseudo maximum likelihood estimator for finite-dimensional parameters. This allows us to overcome a very complex estimation of the Cox model due to the presence of dependent censoring.</p>
+<p>Available copula functions in SemiPar.depCens package includes Frank, Gumbel and Normal copulas. Only Weibull and Lognormal models are allowed for the censoring model, even though any parametric model that satisfies certain identifiability conditions could be used.</p>
+<h2 id="installation">Installation</h2>
+<p>The <em>SemiPar.depCens</em> package is available <a href="https://cran.r-project.org/web/packages/SemiPar.depCens/index.html" target="_blank" rel="noopener">here</a> on the CRAN and can be installed for free.  To install it in R, use:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">install.packages</span><span class="p">(</span><span class="s">&#34;SemiPar.depCens&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="example">Example</h2>
+<p>This is a basic example which shows how to use the package in practice.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">SemiPar.depCens</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">data</span><span class="p">(</span><span class="s">&#34;follic&#34;</span><span class="p">)</span>              <span class="c1"># load the data</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Prepare the data in the way that is used by the package</span>
+</span></span><span class="line"><span class="cl"><span class="n">follic</span> <span class="o">=</span> <span class="n">follic</span><span class="nf">[order</span><span class="p">(</span><span class="n">follic</span><span class="o">$</span><span class="n">time</span><span class="p">),</span><span class="n">]</span>                     <span class="c1"># order the observed survival time</span>
+</span></span><span class="line"><span class="cl"><span class="n">Z</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">follic</span><span class="o">$</span><span class="n">time</span><span class="p">,</span><span class="n">digits</span> <span class="o">=</span> <span class="m">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">d1</span> <span class="o">=</span> <span class="nf">as.numeric</span><span class="p">(</span><span class="n">follic</span><span class="o">$</span><span class="n">status</span><span class="o">==</span><span class="m">1</span><span class="p">)</span>                        <span class="c1"># censoring indicator for survival time T</span>
+</span></span><span class="line"><span class="cl"><span class="n">d2</span> <span class="o">=</span> <span class="nf">as.numeric</span><span class="p">(</span><span class="n">follic</span><span class="o">$</span><span class="n">status</span><span class="o">==</span><span class="m">2</span><span class="p">)</span>                        <span class="c1"># censoring indicator for dependent censoring C</span>
+</span></span><span class="line"><span class="cl"><span class="n">treat</span> <span class="o">=</span> <span class="nf">as.numeric</span><span class="p">(</span><span class="n">follic</span><span class="o">$</span><span class="n">ch</span><span class="o">==</span><span class="s">&#34;Y&#34;</span><span class="p">)</span>                       <span class="c1"># treatment indicator</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span> <span class="o">=</span> <span class="p">(</span><span class="n">follic</span><span class="o">$</span><span class="n">age</span><span class="o">-</span><span class="nf">mean</span><span class="p">(</span><span class="n">follic</span><span class="o">$</span><span class="n">age</span><span class="p">))</span><span class="o">/</span><span class="nf">sd</span><span class="p">(</span><span class="n">follic</span><span class="o">$</span><span class="n">age</span><span class="p">)</span>       <span class="c1"># recommended to standardize continuous variables</span>
+</span></span><span class="line"><span class="cl"><span class="n">hgb</span> <span class="o">=</span> <span class="p">(</span><span class="n">follic</span><span class="o">$</span><span class="n">hgb</span><span class="o">-</span><span class="nf">mean</span><span class="p">(</span><span class="n">follic</span><span class="o">$</span><span class="n">hgb</span><span class="p">))</span><span class="o">/</span><span class="nf">sd</span><span class="p">(</span><span class="n">follic</span><span class="o">$</span><span class="n">hgb</span><span class="p">)</span>       <span class="c1"># standardized hemoglobin</span>
+</span></span><span class="line"><span class="cl"><span class="n">clinstg</span> <span class="o">=</span> <span class="nf">as.numeric</span><span class="p">(</span><span class="n">follic</span><span class="o">$</span><span class="n">clinstg</span><span class="o">==</span><span class="m">1</span><span class="p">)</span>                  <span class="c1"># clinical stage</span>
+</span></span><span class="line"><span class="cl"><span class="n">X</span> <span class="o">=</span> <span class="nf">cbind</span><span class="p">(</span><span class="n">treat</span><span class="p">,</span><span class="n">age</span><span class="p">,</span><span class="n">hgb</span><span class="p">,</span><span class="n">clinstg</span><span class="p">)</span>                         <span class="c1"># data matrix for T, should be in matrix form</span>
+</span></span><span class="line"><span class="cl"><span class="n">W</span> <span class="o">=</span> <span class="nf">cbind</span><span class="p">(</span><span class="nf">rep</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="nf">length</span><span class="p">(</span><span class="n">Z</span><span class="p">)),</span><span class="n">treat</span><span class="p">,</span><span class="n">age</span><span class="p">,</span><span class="n">hgb</span><span class="p">,</span><span class="n">clinstg</span><span class="p">)</span>        <span class="c1"># data matrix for C, should be in matrix form</span>
+</span></span><span class="line"><span class="cl"><span class="n">resData</span> <span class="o">=</span> <span class="nf">data.frame</span><span class="p">(</span><span class="s">&#34;Z&#34;</span> <span class="o">=</span> <span class="n">Z</span><span class="p">,</span><span class="s">&#34;d1&#34;</span> <span class="o">=</span> <span class="n">d1</span><span class="p">,</span> <span class="s">&#34;d2&#34;</span> <span class="o">=</span> <span class="n">d2</span><span class="p">)</span>       <span class="c1"># resData should be a data frame</span>
+</span></span></code></pre></div><h2 id="fit-dependent-censoring-model">Fit dependent censoring model</h2>
+<p>The following code fit a default copula, which is Frank, for the relation between the survival time (T) and dependent censoring time (C).  The default marginal model for C is a Weibull model. Other capabilities can be explored by typing <em>?fitDepCens</em> in the console.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">fitD</span> <span class="o">&lt;-</span> <span class="nf">fitDepCens</span><span class="p">(</span><span class="n">resData</span> <span class="o">=</span> <span class="n">resData</span><span class="p">,</span> <span class="n">X</span> <span class="o">=</span> <span class="n">X</span><span class="p">,</span> <span class="n">W</span> <span class="o">=</span> <span class="n">W</span><span class="p">,</span> <span class="n">bootstrap</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>    
+</span></span></code></pre></div><p>The output for the above code chunk should look as below. Since bootstrapping = FALSE, it does not make any inference based on p-values; only parameter estimates are shown.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">summary</span><span class="p">(</span><span class="n">fitD</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">## ----------------------------------------------------------------------------------------------------
+</span></span><span class="line"><span class="cl">## Summary of dependent censoring model
+</span></span><span class="line"><span class="cl">##
+</span></span><span class="line"><span class="cl">## ----------------------------------------------------------------------------------------------------
+</span></span><span class="line"><span class="cl">##
+</span></span><span class="line"><span class="cl">## Survival submodel: Cox proportional hazards model
+</span></span><span class="line"><span class="cl">##  
+</span></span><span class="line"><span class="cl">## Parameter estimates:
+</span></span><span class="line"><span class="cl">##   treat     age     hgb clinstg 
+</span></span><span class="line"><span class="cl">##  -0.347   0.352   0.042  -0.646 
+</span></span><span class="line"><span class="cl">## 
+</span></span><span class="line"><span class="cl">## Censoring submodel:  Weibull
+</span></span><span class="line"><span class="cl">##  
+</span></span><span class="line"><span class="cl">## Intercept     treat       age       hgb   clinstg     sigma 
+</span></span><span class="line"><span class="cl">##     2.803     0.125    -0.658    -0.038     0.411     0.618
+</span></span><span class="line"><span class="cl">##
+</span></span><span class="line"><span class="cl">## ----------------------------------------------------------------------------------------------------
+</span></span><span class="line"><span class="cl">##
+</span></span><span class="line"><span class="cl">## Assumed copula model: Frank
+</span></span><span class="line"><span class="cl">##  
+</span></span><span class="line"><span class="cl">## Association parameter
+</span></span><span class="line"><span class="cl">##   tau 
+</span></span><span class="line"><span class="cl">##   0.336
+</span></span></code></pre></div><p>We can do bootstrapping by setting bootstrap = TRUE, but note that the algorithm may take long time to finish the computations, even after parallelization is used to speed up the work. The default number of bootstrap size is 50. Increasing number of bootstrap samples may produce more precise standard error estimates.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">fitD</span> <span class="o">&lt;-</span> <span class="nf">fitDepCens</span><span class="p">(</span><span class="n">resData</span> <span class="o">=</span> <span class="n">resData</span><span class="p">,</span><span class="n">X</span> <span class="o">=</span> <span class="n">X</span><span class="p">,</span> <span class="n">W</span> <span class="o">=</span> <span class="n">W</span><span class="p">,</span> <span class="n">bootstrap</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="n">n.boot</span> <span class="o">=</span> <span class="m">50</span><span class="p">)</span>    
+</span></span><span class="line"><span class="cl"><span class="nf">summary</span><span class="p">(</span><span class="n">fitD</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">## ----------------------------------------------------------------------------------------------------
+</span></span><span class="line"><span class="cl">## Summary of dependent censoring model
+</span></span><span class="line"><span class="cl">## ----------------------------------------------------------------------------------------------------
+</span></span><span class="line"><span class="cl">## 
+</span></span><span class="line"><span class="cl">## Survival submodel: Cox proportional hazards model
+</span></span><span class="line"><span class="cl">##  
+</span></span><span class="line"><span class="cl">##         Estimate Boot.SE Pvalue
+</span></span><span class="line"><span class="cl">## treat     -0.347   0.161  0.031
+</span></span><span class="line"><span class="cl">## age        0.352   0.062  0.000
+</span></span><span class="line"><span class="cl">## hgb        0.042   0.056  0.449
+</span></span><span class="line"><span class="cl">## clinstg   -0.646   0.122  0.000
+</span></span><span class="line"><span class="cl">## 
+</span></span><span class="line"><span class="cl">## Censoring submodel:  Weibull
+</span></span><span class="line"><span class="cl">##  
+</span></span><span class="line"><span class="cl">##           Estimate Boot.SE Pvalue
+</span></span><span class="line"><span class="cl">## Intercept    2.803   0.118  0.000
+</span></span><span class="line"><span class="cl">## treat        0.125   0.164  0.445
+</span></span><span class="line"><span class="cl">## age         -0.658   0.087  0.000
+</span></span><span class="line"><span class="cl">## hgb         -0.038   0.081  0.639
+</span></span><span class="line"><span class="cl">## clinstg      0.411   0.135  0.002
+</span></span><span class="line"><span class="cl">## sigma        0.618   0.051  0.000
+</span></span><span class="line"><span class="cl">##
+</span></span><span class="line"><span class="cl">## Assumed copula model : Frank
+</span></span><span class="line"><span class="cl">##
+</span></span><span class="line"><span class="cl">## Association parameter
+</span></span><span class="line"><span class="cl">##     tau Boot.SE  Pvalue 
+</span></span><span class="line"><span class="cl">##    0.336   0.094   0.000
+</span></span></code></pre></div><h2 id="fit-independent-censoring-model">Fit independent censoring model</h2>
+<p>For independent censoring model, the assumption is that the copula parameter between T and C is zero. Hence, the model is very simplified in terms of computational costs. We obtain results very quickly in comparison to dependent censoring model. The default model for censoring distribution is Weibull.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">fitI</span><span class="o">&lt;-</span> <span class="nf">fitIndepCens</span><span class="p">(</span><span class="n">resData</span> <span class="o">=</span> <span class="n">resData</span><span class="p">,</span> <span class="n">X</span> <span class="o">=</span> <span class="n">X</span><span class="p">,</span> <span class="n">W</span> <span class="o">=</span> <span class="n">W</span><span class="p">,</span> <span class="n">bootstrap</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="n">n.boot</span> <span class="o">=</span> <span class="m">50</span><span class="p">)</span>                       
+</span></span><span class="line"><span class="cl"><span class="nf">summary</span><span class="p">(</span><span class="n">fitI</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">## ----------------------------------------------------------------------------------------------------
+</span></span><span class="line"><span class="cl">## Summary of independent censoring model
+</span></span><span class="line"><span class="cl">## ----------------------------------------------------------------------------------------------------
+</span></span><span class="line"><span class="cl">##
+</span></span><span class="line"><span class="cl">## Survival submodel: Cox proportional hazards model
+</span></span><span class="line"><span class="cl">##  
+</span></span><span class="line"><span class="cl">##         Estimate Boot.SE Pvalue
+</span></span><span class="line"><span class="cl">## treat     -0.365   0.158  0.021
+</span></span><span class="line"><span class="cl">## age        0.329   0.061  0.000
+</span></span><span class="line"><span class="cl">## hgb        0.041   0.081  0.609
+</span></span><span class="line"><span class="cl">## clinstg   -0.648   0.136  0.000
+</span></span><span class="line"><span class="cl">## 
+</span></span><span class="line"><span class="cl">## Censoring submodel:  Weibull
+</span></span><span class="line"><span class="cl">##  
+</span></span><span class="line"><span class="cl">##           Estimate Boot.SE Pvalue
+</span></span><span class="line"><span class="cl">## Intercept    3.208   0.168  0.000
+</span></span><span class="line"><span class="cl">## treat        0.127   0.243  0.602
+</span></span><span class="line"><span class="cl">## age         -0.703   0.087  0.000
+</span></span><span class="line"><span class="cl">## hgb         -0.029   0.103  0.779
+</span></span><span class="line"><span class="cl">## clinstg      0.333   0.166  0.046
+</span></span><span class="line"><span class="cl">## sigma        0.608   0.049  0.000
+</span></span></code></pre></div><h2 id="cumulative-hazard-function">Cumulative hazard function</h2>
+<p>Let us compare the estimated cumulative hazards based on the two fitted models.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">plot</span><span class="p">(</span><span class="n">fitD</span><span class="o">$</span><span class="n">observedTime</span><span class="p">,</span> <span class="n">fitD</span><span class="o">$</span><span class="n">cumhazardFunction</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s">&#34;l&#34;</span><span class="p">,</span><span class="n">xlab</span> <span class="o">=</span> <span class="s">&#34;Time&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="n">ylab</span> <span class="o">=</span> <span class="s">&#34;Cumulative hazard function&#34;</span><span class="p">,</span> <span class="n">cex</span> <span class="o">=</span> <span class="m">1.5</span><span class="p">,</span> <span class="n">lwd</span> <span class="o">=</span> <span class="m">1.5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">lines</span><span class="p">(</span><span class="n">fitI</span><span class="o">$</span><span class="n">observedTime</span><span class="p">,</span> <span class="n">fitI</span><span class="o">$</span><span class="n">cumhazardFunctio</span><span class="p">,</span> <span class="n">col</span> <span class="o">=</span> <span class="s">&#34;red&#34;</span><span class="p">,</span> <span class="n">lty</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="n">lwd</span> <span class="o">=</span> <span class="m">1.5</span><span class="p">,</span> <span class="n">cex</span> <span class="o">=</span> <span class="m">1.5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">legend</span><span class="p">(</span><span class="m">8</span><span class="p">,</span> <span class="m">0.85</span><span class="p">,</span> <span class="n">legend</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;Dependent censoring model&#34;</span><span class="p">,</span> <span class="s">&#34;Independent censoring model&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">       <span class="n">lty</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">1</span><span class="p">),</span> <span class="n">col</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;black&#34;</span><span class="p">,</span> <span class="s">&#34;red&#34;</span><span class="p">),</span> <span class="n">cex</span> <span class="o">=</span> <span class="m">1.2</span><span class="p">,</span> <span class="n">bty</span> <span class="o">=</span> <span class="s">&#34;n&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><img src="/post/semipar-depcens-package/index_files/figure-html/plots-1.png" width="672" />
+This figure shows that the estimated cumulative hazard curve based on the independent censoring model underestimates the one based on the dependent censoring model. This is in agreement with our expectation given that the association between the time to relapse and death is positive. Similar phenomena were observed when using the survival functions to compare the two models instead of cumulative hazards (see my previous post for more details on this topic).  
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A4321%2Fpost%2Fsemipar-depcens-package%2F&amp;text=SemiPar.depCens&#43;%3A&#43;A&#43;New&#43;package&#43;for&#43;fitting&#43;the&#43;Cox&#43;proportional&#43;hazards&#43;model&#43;under&#43;dependent&#43;censoring" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A4321%2Fpost%2Fsemipar-depcens-package%2F&amp;t=SemiPar.depCens&#43;%3A&#43;A&#43;New&#43;package&#43;for&#43;fitting&#43;the&#43;Cox&#43;proportional&#43;hazards&#43;model&#43;under&#43;dependent&#43;censoring" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=SemiPar.depCens%20%3A%20A%20New%20package%20for%20fitting%20the%20Cox%20proportional%20hazards%20model%20under%20dependent%20censoring&amp;body=http%3A%2F%2Flocalhost%3A4321%2Fpost%2Fsemipar-depcens-package%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A4321%2Fpost%2Fsemipar-depcens-package%2F&amp;title=SemiPar.depCens&#43;%3A&#43;A&#43;New&#43;package&#43;for&#43;fitting&#43;the&#43;Cox&#43;proportional&#43;hazards&#43;model&#43;under&#43;dependent&#43;censoring" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=SemiPar.depCens&#43;%3A&#43;A&#43;New&#43;package&#43;for&#43;fitting&#43;the&#43;Cox&#43;proportional&#43;hazards&#43;model&#43;under&#43;dependent&#43;censoring%20http%3A%2F%2Flocalhost%3A4321%2Fpost%2Fsemipar-depcens-package%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A4321%2Fpost%2Fsemipar-depcens-package%2F&amp;title=SemiPar.depCens&#43;%3A&#43;A&#43;New&#43;package&#43;for&#43;fitting&#43;the&#43;Cox&#43;proportional&#43;hazards&#43;model&#43;under&#43;dependent&#43;censoring" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://localhost:4321/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hub516c4655f06df7950fb292f3634a5b2_100909_270x270_fill_q75_lanczos_center.jpg" alt="Negera Wakgari Deresa"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://localhost:4321/">Negera Wakgari Deresa</a></h5>
+      
+      <p class="card-text">My research interests include clinical trials, dependent censoring, drug discovery, survival analysis, competing risks, multistate models and copulas.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:negera.deresa@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/" >
+        <i class="fas fa-"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=octeaMcAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/Nago2020" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/negera-w-deresa-9bb2a095/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
