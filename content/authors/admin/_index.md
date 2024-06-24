@@ -45,10 +45,20 @@ bio: My research interests include clinical trials, dependent censoring, machine
 greeting: negera::negera()
 ---
 
+
+I am passionate about statistics and data science, enjoying the challenge of transforming data into actionable insights. 
+
+As a former statistical consultant at the Data Science Institute (DSI), Hasselt University, Belgium, I had the privilege of collaborating with pharmaceutical companies, hospitals, and various industries. My role at DSI involved designing and executing comprehensive studies, calculating sample sizes for diverse study designs, 
+proposing innovative statistical methods, conducting detailed data analyses, 
+writing R programs and statistical reports. I thrive on leveraging data to drive informed decisions and create impactful solutions.
+
+<!--
+I thrive on leveraging data to drive informed decisions and create impactful solutions.
 I am interested in statistics and data science, and I enjoy playing with data to generate data-driven decisions. 
 
-I was a statistical consultant at the Data Science Institute (DSI), Hasselt University, Belgium. At DSI, I have worked with pharmaceutical companies, hospitals, and industries to design and execute studies, calculate sample sizes for different study designs, propose new statistical methods, conduct data analysis, and write R programs and statistical reports. 
+I was a statistical consultant at the Data Science Institute (DSI), Hasselt University, Belgium. At DSI, I have worked with pharmaceutical companies, hospitals, and industries to design and execute studies, calculate sample sizes for different study designs, propose new statistical methods, conduct data analysis, and write R programs and statistical reports.
 
-<!--I have gained the following experience during my tenure at DSI:  Clinical study protocol writing, Sample size calculations for  superiority, non-inferiority and equivalence trials, Adaptive clinical trials, and statistical methods for drug discovery. -->
+
+I have gained the following experience during my tenure at DSI:  Clinical study protocol writing, Sample size calculations for  superiority, non-inferiority and equivalence trials, Adaptive clinical trials, and statistical methods for drug discovery. -->
 
 Before moving to Uhasselt, I completed my PhD in Statistics at KU Leuven, Belgium, where I also completed approximately two years of postdoctoral training. My MSc in Statistics (specialization in Biostatistics) was from Hasselt University. 

@@ -12,7 +12,7 @@ image:
   focal_point: ""
   preview_only: false
 projects: []
-publication: '*Journal of the American Statistical Association (in press)*'
+publication: '*Journal of the American Statistical Association*'
 publication_short: ""
 publication_types:
 - article-journal
