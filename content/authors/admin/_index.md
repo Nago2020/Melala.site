@@ -46,8 +46,7 @@ greeting: negera::negera()
 ---
 
  I am a postdoctoral researcher in the Methods for Big Data group (https://kleinlab-statml.github.io/) at KIT, Germany. 
- Before moving to KIT, I completed my PhD in Statistics at KU Leuven, where I also completed approximately two years of postdoctoral training. 
- My MSc in Statistics (specialization in Biostatistics) was from Hasselt University. 
+ Before moving to KIT, I completed my PhD in Statistics at KU Leuven, where I also completed two years of postdoctoral training. 
 
 I had also the privilege of collaborating with pharmaceutical companies and various industries when I was a statistical consultant at the Data Science Institute (DSI), Hasselt University.
 I thrive on leveraging data to drive informed decisions and create impactful solutions.
